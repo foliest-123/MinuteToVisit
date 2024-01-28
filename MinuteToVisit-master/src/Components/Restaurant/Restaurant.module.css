@@ -1,0 +1,27 @@
+.restaurant_card_layout{
+    display: grid;
+    column-gap: 16px;
+    row-gap: 32px;
+    grid-template-columns: repeat(4,1fr);
+}
+.restaurant_section{
+    margin: 0 35px;
+    padding: 20px 0;
+}
+.restaurant_section_cards_container{
+    background-color: #F6F8FB;
+    padding-top: 95px;
+    padding-bottom: 35px;
+}
+@media(max-width:768px){
+    .restaurant_card_layout{
+        grid-template-columns: 1fr;
+    }
+    .restaurant_section_cards_container{
+        padding-top: 150px;
+    }
+    .restaurant_card_layout > a{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

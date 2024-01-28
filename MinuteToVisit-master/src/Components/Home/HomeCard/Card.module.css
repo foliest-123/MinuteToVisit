@@ -1,0 +1,59 @@
+.home_cards_layout{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    column-gap: 25px;
+}
+.card_container{
+    display: grid;
+    width: 300px;
+    height: 100%;
+    border-radius: 12px 12px 0px 0px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.card_container > img{
+    width: 100%;
+    height: 195px;
+    border-radius: 12px 12px 0px 0px;
+}
+.card_content > h2{
+    margin: 0;
+}
+.content_short{
+    margin: 10px 0;
+}
+.card_content{
+    display: grid;
+    background-color: #ffffff;
+    padding:14px;
+}
+.city_type{
+    display: flex;
+    justify-content: space-between;
+    color: grey;
+    font-size: 15px;
+}
+.know_more{
+    background: none;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    position: relative;
+    cursor: pointer;
+}
+.know_more > svg{
+    position: absolute;
+    top: 2px;
+    margin-left: 4px;
+}
+@media(max-width:768px){
+    .home_container{
+        margin: 0 16px;
+    }
+    .home_cards_layout {
+        overflow-x: auto;
+        column-gap: 16px;
+    }
+    .card_container{
+        flex: 0 0 90%;
+    }
+}

@@ -1,0 +1,139 @@
+.restaurant_description_container{
+    margin: 0 35px;
+    margin-top: 135px;
+}
+.restaurant_hero{
+    display: grid;
+    grid-template-columns: 2fr 1.5fr;
+}
+.side_bar{
+    padding: 30px;
+    padding-top: 0;
+}
+.side_bar > h2{
+    margin-top: 0;
+}
+.menucard_container{
+    text-align: center;
+    margin-top: 60px;
+}
+.menu_card > img{
+    width: 650px;
+    height: 815px;
+}
+.open_in_google,.order_now{
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+    width: fit-content;
+    flex-direction: column;
+    margin: 0 10px;
+}
+.open_in_google > a,.order_now > a{
+    font-size: 20px;
+}
+.popular_dishes_container{
+    row-gap: 20px;
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 25px;
+    padding: 20px;
+  }
+.dish_container{
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 25px;
+    padding: 10px;
+    column-gap:20px;
+    align-items: center;
+}
+.dish_container > img{
+    width: 100px;
+    height: 100px;
+    border-radius: 25px;
+}
+.dish_container > p{
+    color: grey;
+}
+.res_links{
+    display: flex;
+    margin-bottom: 50px;
+}
+.popular_section{
+    margin-bottom: 60px;
+}
+.review{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 25px;
+    width: 400px;
+}
+.reviews_container{
+    display: grid;
+    column-gap: 25px;
+    grid-auto-flow: column;
+    overflow-x: auto;
+    padding: 20px;
+    margin-bottom: 80px;
+}
+.post_review > button{
+    display: block;
+    width: 80px;
+    padding: 10px;
+    background: none;
+    color: white;
+    border: none;
+    font-weight: 500;
+    font-size: 16px;
+    background: #8E24AA;
+    border-radius: 20px;
+}
+.review_form{
+    margin-bottom: 50px;
+}
+.review_form > textarea{
+    border: 1px solid;
+    border-radius: 20px;
+    width: 600px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+@media(max-width:768px){
+    .dish_container > img{
+        width: 80px;
+        height: 80px;
+    }
+    .restaurant_hero{
+        grid-template-columns: auto;
+        row-gap: 30px;
+    }
+    .restaurant_description_container{
+        margin: 0 25px;
+        margin-top: 195px;
+    }
+    .menu_card > img{
+        width: 310px;
+        height: 475px;
+    }
+    .side_bar{
+        padding: 0;
+    }
+    .side_bar > h2{
+        font-size: 20px;
+    }
+    .side_bar > p{
+        font-size: 14px;
+    }
+    .have_food{
+        margin-top: 40px;
+    }
+    .popular_dishes_container{
+        grid-template-columns: auto;
+    }
+    .reviews_container{
+        margin-bottom: 50px;
+    }
+    .review_form > textarea{
+        width: inherit;
+    }
+}

@@ -1,0 +1,14 @@
+.user_image{
+    margin-top: 100px;
+    display: grid;
+    row-gap: 20px;
+}
+.user_image > img{
+    border-radius: 50%;
+}
+.user_image > img, .user_image > h2, .user_image > p{
+    justify-self: center;
+}
+.favourites_container{
+    padding: 0;
+}
